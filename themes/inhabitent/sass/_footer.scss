@@ -1,0 +1,15 @@
+footer {
+    background: url(../../images/dark-wood.png) repeat-x;
+    height: 100%;
+    color: white;
+    
+.footer-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+.footer-copyright {
+    justify-content: center;
+}
+}

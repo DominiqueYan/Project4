@@ -1,0 +1,70 @@
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+
+/* Posts and pages */
+
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin: 0 0 $base__space-unit;
+}
+
+.updated:not(.published){
+	display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: $base__space-unit 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 $base__space-unit;
+}
+
+/* Asides */
+
+.blog .format-aside .entry-title,
+.archive .format-aside .entry-title {
+	display: none;
+}
+
+/* Comments */
+
+.comment-content a {
+	word-wrap: break-word;
+}
+.bypostauthor {
+	display: block;
+}
+
+.about-main{
+	text-align:center; 
+	h2{
+		color:#2f1339;
+	}
+	p{
+		margin-left:10%; //TODO adjust margins
+		margin-right:10%;
+		text-align: left;
+	}
+}
+
+.entry-title{
+	color: red; //TODO change to white when title gone #FFF
+}
+
+.hero-image-header {
+	height: 100vh;
+}
+
