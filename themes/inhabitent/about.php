@@ -5,7 +5,7 @@
  * @package Inhabitent_Theme
  */
 
-//get_header(); ?>
+get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="about-main" role="main">
@@ -19,4 +19,4 @@
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php //get_footer(); ?>
+<?php get_footer(); ?>
