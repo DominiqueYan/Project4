@@ -568,6 +568,21 @@ a {
 .widget_search .search-submit {
   display: none; }
 
+.site-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.main-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
@@ -617,15 +632,6 @@ a {
 
 .entry-title {
   color: red; }
-
-.inhabitent-home-banner {
-  height: 100vh;
-  background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center; }
 
 /*--------------------------------------------------------------
 # Media
@@ -691,6 +697,18 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.inhabitent-home-banner {
+  height: 100vh;
+  background-size: cover, cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
 .inhabitent-product-grid {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
