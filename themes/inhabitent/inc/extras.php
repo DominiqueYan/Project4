@@ -57,7 +57,7 @@ function inhabitent_products( $query ) {
     if ( is_post_type_archive( 'product' ) || is_tax("product_type")){
 		$query->set( 'orderby', 'title' );
         $query->set( 'order', 'ASC' );
-        $query->set( 'posts_per_page', 50 );
+        $query->set( 'posts_per_page', 16 );
         return;
     }
 }

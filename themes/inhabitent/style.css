@@ -415,6 +415,14 @@ textarea {
   padding-left: 3px;
   width: 100%; }
 
+form fieldset .search-field {
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  width: 0; }
+
+form fieldset .show {
+  width: 200px; }
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
@@ -574,14 +582,16 @@ a {
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  width: 100%; }
 
 .main-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
 /*--------------------------------------------------------------
 # Content
@@ -629,9 +639,6 @@ a {
     margin-left: 10%;
     margin-right: 10%;
     text-align: left; }
-
-.entry-title {
-  color: red; }
 
 /*--------------------------------------------------------------
 # Media
@@ -708,6 +715,15 @@ object {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
+
+.product-type-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
 
 .inhabitent-product-grid {
   display: grid;

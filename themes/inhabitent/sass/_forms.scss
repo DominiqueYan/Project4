@@ -60,3 +60,16 @@ textarea {
 	padding-left: 3px;
 	width: 100%;
 }
+
+form{
+	fieldset{
+		.search-field{
+			transition: all 1s ease-in-out;
+			width:0;
+		}
+		.show{
+			width:200px;
+		}
+	}
+}
+

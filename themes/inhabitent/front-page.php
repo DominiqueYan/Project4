@@ -16,7 +16,7 @@ get_header(); ?>
       </section>
 
       <h3>shop stuff</h3>
-        <section>
+        <section class= "product-type-box">
            <?php $product_types=get_terms('product_type');?>
            <?php foreach ( $product_types as $term ) : setup_postdata( $term ); ?>
               <div>
