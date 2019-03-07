@@ -23,10 +23,10 @@
 			<header id="masthead" class="site-header" role="banner">
 	
 				<div class="site-branding">
-				<div class="header-logo">
-						<a class="dark-logo" href= "<?php echo get_site_url(); ?>"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-tent.svg" alt="inhabitent tent logo"/></a>
-						<a class="light-logo" href= "<?php echo get_site_url(); ?>"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-tent-white.svg" alt="inhabitent tent logo"/></a>
-				</div>
+					<div class="header-logo">
+							<a class="dark-logo" href= "<?php echo get_site_url(); ?>"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-tent.svg" alt="inhabitent tent logo"/></a>
+							<a class="light-logo" href= "<?php echo get_site_url(); ?>"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-tent-white.svg" alt="inhabitent tent logo"/></a>
+					</div>
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 				</div><!-- .site-branding -->
 
@@ -35,7 +35,7 @@
 					<div class="header-nav">
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 					<?php get_search_form();?>
-</div>
+				</div>
 				</nav>
 
 			</header><!-- #masthead -->
