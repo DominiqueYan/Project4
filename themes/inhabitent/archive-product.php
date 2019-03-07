@@ -13,13 +13,10 @@ get_header(); ?>
         <?php if ( have_posts() ) : ?>
 
         <header class="page-header">
-            <?php
-                the_archive_title( '<h1 class="page-title">', '</h1>' );
-
-            ?>
+            <h1>shop stuff</h1>
         </header><!-- .page-header -->
         
-        <section>
+        <section class="product-type-name">
            <?php $product_types=get_terms('product_type');?>
            <?php foreach ( $product_types as $product_type ) : setup_postdata( $product_type ); ?>
               <div>
