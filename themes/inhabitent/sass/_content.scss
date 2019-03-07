@@ -59,4 +59,58 @@
 		text-align: left;
 	}
 }
-	
+
+.content-section {
+	width: 1120px;
+	margin: auto;
+}
+
+.home {
+	.content-section {
+		width: 100%
+	}
+	.home-container {
+		width: 1120px;
+		margin: auto
+	}
+}
+
+.page-template-about {
+	.content-section {
+		width: 100%;
+	}
+	p, h2 {
+		width: 1120px;
+		margin: auto
+	}
+	.hero-image-header {
+		height: 80vh
+	}
+}
+
+.page-id-28, .search, .blog 
+{.content-section {
+	display: grid;
+	grid-template-columns: 1fr .5fr;
+}}
+
+.type-product {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	width: 1120px;
+	margin: auto;
+	margin-top: 6rem;
+	margin-bottom: 6rem;
+}
+
+.single {
+
+.entry-content, .entry-header {
+	padding: 1rem;
+	margin: 0
+}
+
+.entry-title {
+	margin: 0
+}
+}

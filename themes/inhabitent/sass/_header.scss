@@ -1,11 +1,57 @@
 .site-header {
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 1120px;
+    margin: auto;
     
+}
+.logo {
+    width: 4.5rem;
+}
+.light-logo {
+    display: none;
+}
+
+.page-template-about, .home {
+    .light-logo {
+        display: inline;
+    }
+    .dark-logo {
+        display: none;
+    }
+    .site-header {
+        position: absolute;
+        left: 0;
+        right: 0
+    }
 }
 
 .main-navigation {
     display: flex;
     justify-content: space-between;
+    position: relative;
+}
+
+.header-nav {
+    position: absolute;
+    right: 0;
+    display: flex;
+}
+
+.menu-my-menu-container {
+    padding: 1rem;
+
+    li {
+        padding: .5rem;
+    }
+}
+
+fieldset {
+    border: none;
+    padding-top: 1.2rem;
+    padding-left: 0;
+}
+
+.search-field {
+    background: transparent
 }

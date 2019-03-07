@@ -22,7 +22,7 @@
 				</div>
 				
 				<div class="footer-logo">
-					<a href= "<?php echo get_site_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-text.svg"/></a>
+					<a href= "<?php echo get_site_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-text.svg" alt="Inhabitent footer logo"/></a>
            		</div>
 			</div>
            	<div class="footer-copyright">
