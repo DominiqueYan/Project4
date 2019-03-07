@@ -1,0 +1,41 @@
+.single-post, .archive, .blog {
+    .widget-area{
+        padding-left: 25px;
+    }
+    .entry-header {
+        padding: 0;
+        position: relative;
+        img {
+            width: 100%;
+            height: auto;
+        }
+        h1, h2,.entry-meta{
+            position: absolute;
+            max-width: 80%;
+            background-color: #248A83;
+            color: white;
+            a{
+                color:white;
+                &:hover { color: #d99054;}
+            }
+            
+        }
+        h1, h2{
+        top: 20px;
+        text-align: left;
+        left: 0;
+        padding:5px 8px;
+        box-sizing: border-box;
+
+        }
+
+        .entry-meta{
+            transform-origin: bottom right;
+            text-align: right;
+            right: 0;
+            bottom: 20px;
+        }
+
+    }
+
+}
