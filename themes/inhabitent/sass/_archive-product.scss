@@ -1,5 +1,27 @@
+.page-header h1{   
+    text-transform: uppercase;
+    padding-top: 50px;
+
+}
+
+.product-type-name {
+    display: flex;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+    a{    
+    text-decoration: none;
+    }
+}
+
 .inhabitent-product-grid {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-rows: 22.5% 22.5% 22.5% 22.5%;
+    grid-gap: 2.5%;
+    
+
+    img{
+        height: 200px;
+    }
 }
+
