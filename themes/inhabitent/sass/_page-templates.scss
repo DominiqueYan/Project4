@@ -51,6 +51,61 @@ main{
 }
 }
 
+.read-more {
+	text-transform: uppercase;
+	padding: 1rem;
+	padding-top: .5rem;
+	padding-bottom: .5rem;
+	width: 9rem;
+	border: 1px solid black;
+		a
+		{color: black;}
+
+	&:hover{
+		background-color: $color__link;
+		a
+		{color: white;}
+	}
+}
+.frontpage-journal-posts {
+	display: flex;
+	flex-direction: row;
+
+	.journal-wrapper {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+		width: 30%;
+		img{
+			align-self: auto;
+			height: 220px;
+			width: 330px;
+		}
+		.journal-info {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+}
+.product-type-box {
+	.tax-types {
+		border: 1px #a1a1a1;
+		
+	}
+}
+.more-adventure {    
+    background: #248a83;
+    border-radius: 0;
+    color: #fff;
+    padding: 1.25 rem 2.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: none;
+}
+.more-adventure-box {
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+}
 
 .adventure h2 {
 display: flex;

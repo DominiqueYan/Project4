@@ -39,6 +39,8 @@ get_header(); ?>
       <?php while ( have_posts() ) : the_post(); ?>
    <section class= "inhabitent-journal">
       <h2>inhabitent journal</h2>
+      
+   <div class="frontpage-journal-posts">
       <?php $product_posts=inhabitent_get_latest_posts();?>
 
          <?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>
@@ -49,11 +51,17 @@ get_header(); ?>
                   echo '<div class="journal-info">';
                   the_date();
                   comments_number();
+                  echo '<a>';
                   the_title();
+                  echo '</a>';
                   echo ' </div>';
             ?>
+         <div class= "read-more">
+            <a href="<?php echo the_permalink(); ?>">read entry</a>
+      </div>
          </div>
       <?php endforeach; wp_reset_postdata(); ?>
+</div>
    </section>
 
       <?php endwhile; ?>
@@ -69,44 +77,53 @@ get_header(); ?>
    <section class="adventure">
          <h2 class="adventure-head">latest adventures</h2>
          <ul>
+
             <li class="canoe">
                <div class="adventure-posts">
                   <img src="<?php echo get_template_directory_uri(); ?>/images/adventure-photos/canoe-girl.jpg" alt="canoe"/>
                </div>
+
                <div class="adventure-box">
                   <h3 class="adventure-text">Getting Back to Nature in a Canoe</h3>
                   <a class="adventure-button" href="readmore">read more</a>
                </div>
             </li>
+
             <li class="beach">
                <div class="adventure-thumbnail">
                   <img src="<?php echo get_template_directory_uri(); ?>/images/adventure-photos/beach-bonfire.jpg" alt="beach"/>
                </div>
+
                <div class="adventure-box">
                   <h3 class="adventure-text">A Night with Friends at the Beach</h3>
                   <a class="adventure-button" href="readmore">read more</a>
                </div>
             </li>
+
             <li class="mountain">
                <div class="adventure-thumbnail">
                   <img src="<?php echo get_template_directory_uri(); ?>/images/adventure-photos/mountain-hikers.jpg" alt="mountain-hikers"/>
                </div>
+
                <div class="adventure-box">
                   <h3 class="adventure-text">Taking in the View at Big Mountain</h3>
                   <a class="adventure-button" href="readmore">read more</a>
                </div>
             </li>
+
             <li class="night">
                <div class="adventure-thumbnail">
                   <img src="<?php echo get_template_directory_uri(); ?>/images/adventure-photos/night-sky.jpg" alt="night"/>
                </div>
+
                <div class="adventure-box">
                   <h3 class="adventure-text">Star-Gazing at the Night Sky</h3>
                   <a class="adventure-button" href="readmore">read more</a>
                </div>
             </li>
          </ul>
-         <div class="more-adventure-area">
+
+         <div class="more-adventure-box">
          <a class="more-adventure" href="moreadventures">more adventures</a>
 </div>
 
