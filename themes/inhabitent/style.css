@@ -713,6 +713,9 @@ fieldset {
 .archive .format-aside .entry-title {
   display: none; }
 
+a {
+  text-decoration: none; }
+
 /* Comments */
 .comment-content a {
   word-wrap: break-word; }
@@ -750,11 +753,11 @@ fieldset {
 .page-template-about .hero-image-header {
   height: 80vh; }
 
-.page-id-28 .content-section, .search .content-section, .blog .content-section, .single .content-section, .archive .content-section {
+.page-id-28 .content-section, .search .content-section, .blog .content-section, .single .content-section, .single-product .content-section {
   display: grid;
   grid-template-columns: 1fr .5fr; }
 
-.type-product {
+.single-product .type-product {
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 1120px;
@@ -878,6 +881,70 @@ main .product-type-box {
       main .product-type-box .tax-types a:link:hover, main .product-type-box .tax-types a:visited:hover {
         background-color: black; }
 
+.read-more {
+  text-transform: uppercase;
+  padding: 1rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  width: 9rem;
+  border: 1px solid black; }
+  .read-more a {
+    color: black; }
+  .read-more:hover {
+    background-color: #248A83; }
+    .read-more:hover a {
+      color: white; }
+
+.frontpage-journal-posts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+  .frontpage-journal-posts .journal-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 30%; }
+    .frontpage-journal-posts .journal-wrapper img {
+      -ms-flex-item-align: auto;
+          align-self: auto;
+      height: 220px;
+      width: 330px; }
+    .frontpage-journal-posts .journal-wrapper .journal-info {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+
+.product-type-box .tax-types {
+  border: 1px #a1a1a1; }
+
+.more-adventure {
+  background: #248a83;
+  border-radius: 0;
+  color: #fff;
+  padding: 1.25 rem 2.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: none; }
+
+.more-adventure-box {
+  padding-top: 1rem;
+  padding-bottom: 5rem; }
+
 .adventure h2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -983,11 +1050,11 @@ main .product-type-box {
 .stars h3 {
   font-size: 1.7rem; }
 
-.page-header h1 {
+.archive .page-header h1 {
   text-transform: uppercase;
   padding-top: 50px; }
 
-.product-type-name {
+.archive .product-type-name {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -995,16 +1062,14 @@ main .product-type-box {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   text-transform: uppercase; }
-  .product-type-name a {
-    text-decoration: none; }
 
-.inhabitent-product-grid {
+.archive .inhabitent-product-grid {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 22.5% 22.5% 22.5% 22.5%;
-  grid-gap: 2.5%; }
-  .inhabitent-product-grid img {
-    height: 200px; }
+  grid-template-rows: 22.5% 22.5% 22.5% 22.5%; }
+  .archive .inhabitent-product-grid article img {
+    height: 220px;
+    width: 240px; }
 
 .single-post .widget-area, .archive .widget-area, .blog .widget-area {
   padding-left: 25px; }

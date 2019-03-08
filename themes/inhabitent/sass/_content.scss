@@ -39,6 +39,10 @@
 	display: none;
 }
 
+a {
+	text-decoration: none
+}
+
 /* Comments */
 
 .comment-content a {
@@ -88,12 +92,13 @@
 	}
 }
 
-.page-id-28, .search, .blog, .single, .archive
+.page-id-28, .search, .blog, .single, .single-product
 {.content-section {
 	display: grid;
 	grid-template-columns: 1fr .5fr;
 }}
 
+.single-product {
 .type-product {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -101,6 +106,7 @@
 	margin: auto;
 	margin-top: 6rem;
 	margin-bottom: 6rem;
+}
 }
 
 .single {
